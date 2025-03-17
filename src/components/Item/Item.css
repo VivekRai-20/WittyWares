@@ -1,0 +1,65 @@
+/* Item container */
+.item {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  /* Item image */
+  .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 15px; /* Spacing below the image */
+  }
+  
+  /* Item name */
+  .item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 10px; /* Spacing below the name */
+  }
+  
+  /* Item prices */
+  .item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between old and new prices */
+  }
+  
+  .itemPrice_new {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4141; /* Highlight color for new price */
+  }
+  
+  .itemPrice_old {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through; /* Strike-through for old price */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .item p {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  
+    .itemPrice_new {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  
+    .itemPrice_old {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  }

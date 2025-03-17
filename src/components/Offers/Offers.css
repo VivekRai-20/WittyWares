@@ -1,0 +1,103 @@
+/* Offers section */
+.offers {
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 1200px; /* Limit maximum width */
+    height: auto; /* Adjusted height to be flexible */
+    min-height: 60vh; /* Minimum height */
+    display: flex;
+    margin: 50px auto; /* Adjusted margin */
+    padding: 40px 20px; /* Adjusted padding for responsiveness */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Left side of the offers section */
+  .offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px; /* Added padding for better spacing */
+  }
+  
+  .offers-left h1 {
+    color: #171717;
+    font-size: 60px; /* Adjusted font size */
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px; /* Added margin for spacing */
+  }
+  
+  .offers-left p {
+    color: #171717;
+    font-size: 20px; /* Adjusted font size */
+    font-weight: 500;
+    margin-bottom: 30px; /* Added margin for spacing */
+  }
+  
+  .offers-left button {
+    width: 250px; /* Adjusted width */
+    height: 60px; /* Adjusted height */
+    border-radius: 30px; /* Rounded corners */
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 500;
+    margin-top: 20px; /* Adjusted margin */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .offers-left button:hover {
+    background: #e23333; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+  }
+  
+  /* Right side of the offers section */
+  .offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Added padding */
+  }
+  
+  .offers-right img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 20px; /* Rounded corners for the image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .offers {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .offers-left {
+      padding: 0;
+    }
+  
+    .offers-left h1 {
+      font-size: 40px; /* Adjusted font size for smaller screens */
+    }
+  
+    .offers-left p {
+      font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+  
+    .offers-left button {
+      width: 200px; /* Adjusted width for smaller screens */
+      height: 50px; /* Adjusted height for smaller screens */
+      font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+  
+    .offers-right {
+      margin-top: 20px; /* Added margin for spacing */
+    }
+  }

@@ -1,0 +1,132 @@
+/* Popular section container */
+.popular {
+    padding: 20px;
+    background: #f9f9f9; /* Light background for contrast */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 50px; /* Spacing at the bottom */
+    text-align: center; /* Center-align text */
+  }
+  
+  /* Heading */
+  .popular h1 {
+    font-size: 32px; /* Large font size for the heading */
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 10px; /* Spacing below the heading */
+  }
+  
+  /* Horizontal line */
+  .popular hr {
+    width: 200px; /* Width of the line */
+    height: 6px; /* Height of the line */
+    border-radius: 10px; /* Rounded corners for the line */
+    background: #ff4141; /* Red color for the line */
+    border: none; /* Remove default border */
+    margin: 0 auto 20px; /* Center-align and spacing below the line */
+  }
+  
+  /* Products grid */
+  .popular-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+    gap: 30px; /* Space between items */
+    margin-top: 20px; /* Spacing above the grid */
+  }
+  
+  /* Product item styling */
+  .popular-item .item {
+    background: #fff; /* White background for product items */
+    border-radius: 15px; /* Rounded corners for product items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for product items */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .popular-item .item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .popular-item .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for product images */
+    margin-bottom: 15px; /* Spacing below the image */
+  }
+  
+  .popular-item .item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 10px; /* Spacing below the title */
+  }
+  
+  .popular-item .item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px; /* Spacing below the description */
+  }
+  
+  .popular-item .item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between old and new prices */
+  }
+  
+  .popular-item .item-price-old {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through; /* Strike-through for old price */
+  }
+  
+  .popular-item .item-price-new {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4141; /* Highlight color for new price */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .popular-item {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards in a row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .popular {
+      padding: 15px; /* Adjusted padding for smaller screens */
+    }
+  
+    .popular h1 {
+      font-size: 28px; /* Smaller font size for smaller screens */
+    }
+  
+    .popular-item {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in a row for smaller screens */
+      gap: 20px; /* Adjusted gap for smaller screens */
+    }
+  
+    .popular-item .item h3 {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  
+    .popular-item .item p {
+      font-size: 12px; /* Smaller font size for smaller screens */
+    }
+  
+    .popular-item .item-price-old {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  
+    .popular-item .item-price-new {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popular-item {
+      grid-template-columns: repeat(1, 1fr); /* 1 card in a row for very small screens */
+    }
+  }

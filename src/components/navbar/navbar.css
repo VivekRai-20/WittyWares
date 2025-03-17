@@ -1,0 +1,160 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Padding for the navbar */
+  background: #fff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure navbar stays on top */
+}
+
+/* Logo */
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #171717;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo text and emoji */
+}
+
+/* Search bar */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between input and button */
+}
+
+.navbar-search input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e0e0e0; /* Light border for input */
+  border-radius: 5px; /* Rounded corners for input */
+  outline: none;
+  width: 300px; /* Width of the search input */
+  transition: border-color 0.3s ease;
+}
+
+.navbar-search input:focus {
+  border-color: #ff4141; /* Highlight border on focus */
+}
+
+.navbar-search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #ff4141; /* Red background for the button */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar-search button:hover {
+  background: #e23333; /* Darker shade on hover */
+}
+
+/* Navigation links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ff4141; /* Highlight color on hover */
+}
+
+/* Actions (Login and Cart) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between login button and cart icon */
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #ff4141; /* Red background for the button */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #e23333; /* Darker shade on hover */
+}
+
+.navbar-cart a {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between cart icon and count */
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.navbar-cart a:hover {
+  color: #ff4141; /* Highlight color on hover */
+}
+
+.cart-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #ff4141; /* Red background for the count */
+  padding: 2px 8px;
+  border-radius: 50%; /* Circular shape for the count */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 15px;
+    gap: 15px; /* Space between stacked items */
+  }
+
+  .navbar-search input {
+    width: 100%; /* Full width for search input on smaller screens */
+  }
+
+  .navbar-links {
+    gap: 15px; /* Adjusted gap for smaller screens */
+  }
+
+  .navbar-actions {
+    gap: 15px; /* Adjusted gap for smaller screens */
+  }
+
+  .login-button {
+    padding: 8px 15px; /* Smaller padding for smaller screens */
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+
+  .navbar-cart a {
+    gap: 3px; /* Adjusted gap for smaller screens */
+  }
+
+  .cart-count {
+    font-size: 12px; /* Smaller font size for smaller screens */
+    padding: 2px 6px; /* Smaller padding for smaller screens */
+  }
+}

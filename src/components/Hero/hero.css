@@ -1,0 +1,112 @@
+.hero{
+  height: 75vh;
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 10%; /* Adjusted padding for responsiveness */
+  line-height: 1.1;
+}
+
+.hero-left h2 {
+  color: #090909;
+  font-size: 28px; /* Slightly larger font size */
+  font-weight: 600;
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.hero-left p {
+  color: #171717;
+  font-size: 80px; /* Adjusted font size for better readability */
+  font-weight: 700;
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Tighter line height */
+}
+
+.hero-left p:first-of-type {
+  font-size: 60px; /* Smaller font size for the first line */
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-hand-icon img {
+  width: 80px; /* Slightly smaller icon */
+}
+
+.hero-hand-icon p {
+  font-size: 50px; /* Adjusted font size */
+  color: #ff4141; /* Highlight color */
+  font-weight: 700;
+}
+
+.hero-latest-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 280px; /* Slightly smaller width */
+  height: 60px; /* Slightly smaller height */
+  border-radius: 30px; /* Rounded corners */
+  margin-top: 20px; /* Adjusted margin */
+  background: #ff4141;
+  color: white;
+  font-size: 18px; /* Adjusted font size */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.hero-latest-btn:hover {
+  background: #e23333; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-left {
+    padding-left: 5%; /* Adjusted padding for smaller screens */
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center-align text */
+  }
+
+  .hero-left h2 {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-left p {
+    font-size: 50px; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-left p:first-of-type {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-hand-icon img {
+    width: 60px; /* Adjusted icon size for smaller screens */
+  }
+
+  .hero-hand-icon p {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+  }
+
+  .hero-latest-btn {
+    width: 220px; /* Adjusted width for smaller screens */
+    height: 50px; /* Adjusted height for smaller screens */
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}
+.her-right{
+  flex:1;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,150 @@
+/* Shop category container */
+.shop-category {
+    padding: 20px;
+    background: #f9f9f9; /* Light background for contrast */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 50px; /* Spacing at the bottom */
+  }
+  
+  /* Banner image */
+  .shop-category img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Rounded corners for the banner */
+    margin-bottom: 20px; /* Spacing below the banner */
+  }
+  
+  /* Index and sort section */
+  .shopCategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Spacing below the section */
+  }
+  
+  .shopCategory-indexSort p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .shopCategory-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .shopCategory-sort img {
+    width: 20px; /* Icon size */
+    height: 20px;
+  }
+  
+  /* Products grid */
+  .shopCategory-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+    gap: 30px; /* Space between items */
+    margin-top: 20px; /* Spacing above the grid */
+  }
+  
+  /* Product item styling */
+  .shopCategory-products .item {
+    background: #fff; /* White background for product items */
+    border-radius: 15px; /* Rounded corners for product items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for product items */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .shopCategory-products .item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .shopCategory-products .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for product images */
+    margin-bottom: 15px; /* Spacing below the image */
+  }
+  
+  .shopCategory-products .item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+    margin-bottom: 10px; /* Spacing below the title */
+  }
+  
+  .shopCategory-products .item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px; /* Spacing below the description */
+  }
+  
+  .shopCategory-products .item-prices {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between old and new prices */
+  }
+  
+  .shopCategory-products .item-price-old {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through; /* Strike-through for old price */
+  }
+  
+  .shopCategory-products .item-price-new {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4141; /* Highlight color for new price */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .shopCategory-products {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards in a row for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .shop-category {
+      padding: 15px; /* Adjusted padding for smaller screens */
+    }
+  
+    .shopCategory-indexSort {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start;
+      gap: 10px; /* Space between items */
+    }
+  
+    .shopCategory-products {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in a row for smaller screens */
+      gap: 20px; /* Adjusted gap for smaller screens */
+    }
+  
+    .shopCategory-products .item h3 {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  
+    .shopCategory-products .item p {
+      font-size: 12px; /* Smaller font size for smaller screens */
+    }
+  
+    .shopCategory-products .item-price-old {
+      font-size: 14px; /* Smaller font size for smaller screens */
+    }
+  
+    .shopCategory-products .item-price-new {
+      font-size: 16px; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shopCategory-products {
+      grid-template-columns: repeat(1, 1fr); /* 1 card in a row for very small screens */
+    }
+  }
